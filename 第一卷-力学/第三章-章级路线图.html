@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>第三章章级路线图｜朗道《力学》</title>
+<style>
+:root{--ink:#12324a;--soft:#415d6f;--paper:#f3f5f3;--white:#fff;--line:#d3dad9;--green:#2e7d5b;--gold:#ad781d}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.83 "Microsoft YaHei",system-ui,sans-serif}main{max-width:860px;margin:auto;padding:38px 23px 80px}h1{font-size:clamp(29px,4vw,40px);line-height:1.28;margin:8px 0 22px}h2{font-size:23px;line-height:1.4;margin:0 0 12px}p{margin:11px 0}a{color:#17654a;text-decoration-thickness:1px;text-underline-offset:3px}.eyebrow{color:var(--gold);font-size:12px;font-weight:700;letter-spacing:.19em}.lead{font-size:19px;line-height:1.75}.stage{background:var(--white);border:1px solid var(--line);border-radius:12px;margin:18px 0;padding:23px 26px}.stage .no{color:var(--gold);font:bold 14px ui-monospace,monospace;letter-spacing:.08em}.stage strong{color:var(--green)}.aside{border-left:4px solid var(--gold);padding:10px 17px;margin:22px 0;background:#fff9eb}.thread{font-size:17px;background:#e7f0eb;border-radius:12px;padding:20px 25px;margin:25px 0}.thread p{margin:7px 0}.landscape{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin:20px 0}.landscape svg{width:100%;height:auto;display:block}.landscape figcaption{color:var(--soft);font-size:14px;margin-top:3px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.actions a{background:#fff;border:1px solid var(--line);border-radius:8px;padding:7px 12px}.small{font-size:13px;color:var(--soft)}
+@media(max-width:600px){main{padding:25px 15px 65px}.stage{padding:18px}.lead{font-size:17px}}
+</style>
+</head>
+<body><main>
+<div class="eyebrow">LANDAU · MECHANICS / CHAPTER 03</div>
+<h1>第三章：从一条能量线，走到一条轨道</h1>
+<p class="lead">想象一个小球在山谷里滑动。你知道山谷的形状，却不知道小球下一秒在哪里。第一章教我们写运动方程，第二章告诉我们能量守恒。朗道在第三章问的是：<strong>能不能先利用已知的不变量，把“求运动”变成更容易回答的问题？</strong></p>
+<figure class="landscape"><svg viewBox="0 0 720 230" role="img" aria-labelledby="fig-title fig-desc"><title id="fig-title">一维势阱与能量线</title><desc id="fig-desc">势能曲线呈谷形，水平的总能量线与它交于左右两个转折点。小球只能在两点之间往返。</desc><path d="M58 194H675 M72 204V20" fill="none" stroke="#8094a1" stroke-width="2"/><path d="M88 30 C175 40 204 188 350 190 C488 188 513 48 631 30" fill="none" stroke="#2e7d5b" stroke-width="4"/><path d="M75 103H653" fill="none" stroke="#ad781d" stroke-width="3" stroke-dasharray="9 6"/><circle cx="218" cy="103" r="5" fill="#ad781d"/><circle cx="492" cy="103" r="5" fill="#ad781d"/><text x="660" y="108" fill="#8a6019" font-size="17">E</text><text x="90" y="37" fill="#2e7d5b" font-size="17">U(x)</text><text x="198" y="125" fill="#12324a" font-size="15">x₁</text><text x="480" y="125" fill="#12324a" font-size="15">x₂</text><text x="348" y="88" fill="#12324a" font-size="16" text-anchor="middle">能往返的区间</text></svg><figcaption>不用先求出 x(t)，能量线已经告诉我们小球到不了哪里；要知道它走得多快，才需要下一步计算。</figcaption></figure>
+<div class="stage"><div class="no">§11 · 从“能到哪”到“要多久”</div><h2><a href="11-一维运动.html">一维运动</a></h2><p>把总能量 E 画成水平线：在 U(x)&gt;E 的地方，小球需要负的动能，当然进不去。在允许区内，E−U(x) 给出它每一处的速度。走一小段距离花多少时间？用这一段距离除以该处速度，再沿路加起来。</p><p>这就是本章第一次<strong>用守恒量降阶</strong>：不必先解加速度，已经能写出时间积分。若小球在两个普通转折点间来回走，去程与回程合起来便得到周期 T(E)。</p></div>
+<div class="stage"><div class="no">§12 · 把问题倒过来</div><h2><a href="12-根据振动周期确定势能.html">根据振动周期确定势能</a></h2><p>现在遮住山谷，只记录不同能量下小球往返一次的时间。知道整条 T(E) 曲线，能把原来的山谷画回来吗？每一层高度的左右两侧都会给周期贡献时间；测量把这两份时间加在了一起。</p><p>朗道证明：可以从 T(E) 算出同一高度下左右位置的<strong>间距</strong>，但通常不能知道这段间距在左边、右边各占多少。除非再给“势阱左右对称”等条件，单靠周期并不能唯一反推出势能。这一节提醒我们：会正向计算，不表示反向就能找回全部信息。</p></div>
+<div class="aside"><strong>这里真的换题了。</strong> §12 是 §11 的反问题。§13 不使用周期反演的结果；它换到两颗粒子，但继续使用同一种求解习惯：先选能把运动拆开的变量。</div>
+<div class="stage"><div class="no">§13 · 两颗球，先分清两种运动</div><h2><a href="13-折合质量.html">折合质量</a></h2><p>想象光滑桌面上两颗相互作用的小球。它们可以一起向右漂，也可以一颗向另一颗靠近。如果只盯着两颗球各自的位置，这两种变化会混在同一组方程里。</p><p>换成<strong>质心在哪里</strong>与<strong>两球相差多少</strong>，共同漂移和相对运动就分开了。相对运动像一个质量为折合质量 μ 的等效粒子在势场中运动；解完后，再把质心和相对位置合起来，仍能找回两颗真球各自的轨迹。这个换变量没有扔掉运动信息。</p></div>
+<div class="stage"><div class="no">§14 · “靠近”与“绕转”不是同一件事</div><h2><a href="14-有心力场内的运动.html">有心力场内的运动</a></h2><p>§13 留下一个相对位矢。现在假设相互作用只取决于两球距离：这根箭头的<strong>长度</strong>和<strong>方向</strong>怎样变？对非径向运动，角动量守恒把轨道限制在一个平面，并规定了绕转的快慢；把它带入能量式，剩下的半径就像 §11 的一维问题。</p><p>但“像一维”只说半径的进出。粒子到最远处时，径向速度虽然为零，仍可能沿切向运动。因此还要算每次径向往返转过多少角度；半径总在两个界限间变化，空间轨道也未必闭合。</p></div>
+<div class="stage"><div class="no">§15 · 把通法用于一种特殊的势</div><h2><a href="15-开普勒问题.html">开普勒问题</a></h2><p>§14 对一般中心势留下了两个积分。把势能取成 −α/r，积分能真正算下去：先得到圆锥曲线，辨认椭圆、抛物线与双曲线；再用面积定律和时间积分回答“沿着这条线，何时走到哪里”。</p><p>画出椭圆仍不等于知道小球怎样走：近心处快、远心处慢。朗道把<strong>轨道形状</strong>与<strong>时间规律</strong>分开求，最后再检查近心方向为什么保持固定。漂亮的闭合椭圆依赖这类势的特殊形式，不能套给任意有心力。</p></div>
+<div class="thread"><p><strong>把五节压成一句话：</strong>能量先让一维运动可求积；周期反演显示观测信息的边界；质心坐标把两体变成相对运动；角动量把相对运动的绕转与径向进出拆开；在 −α/r 这个特殊势里，轨道和时间终于都算了出来。</p><p>“积分运动方程”在本章不等于每次都写出初等函数形式的 x(t)。关键是知道积分回答了哪一个问题，又有哪些运动信息还没恢复。</p></div>
+<div class="actions"><a href="index.html">返回全书目录</a><a href="11-一维运动.html">从 §11 开始</a><a href="15-开普勒问题.html">直接看 §15</a></div>
+<p class="small">依据本地《朗道十卷第一卷-力学.md》第三章 §11–15 整理；图像与讲解为课件补充。2026-09-25 试改版。</p>
+</main></body></html>
